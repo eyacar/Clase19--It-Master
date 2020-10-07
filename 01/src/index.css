@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1{text-align: center;}
+#t {
+  width: 40%;
+  margin: auto;
+  background-color: #f1f1c1;
+  text-align: center;
+}
+#t th{border: 3px solid black;
+      background-color: gray;
+}
+#t td{border: 1px solid black;}
