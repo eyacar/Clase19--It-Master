@@ -13,8 +13,8 @@ const paises = [{'pais':'Argentina','capital':'Buenos Aires','continente':'Amér
                 {'pais':'Inglaterra','capital':'Londres','continente':'Europa'}
 ]
 
-const America = paises.filter(cont => cont.continente == 'América').map((conti,i) => <tr key={i}><td>{conti.pais}</td><td>{conti.capital}</td></tr>)
-const Europa = paises.filter(contin => contin.continente == 'Europa').map((contin,i) => <tr key={i}><td>{contin.pais}</td><td>{contin.capital}</td></tr>)
+const America = paises.filter(cont => cont.continente === 'América').map((conti,i) => <tr key={i}><td>{conti.pais}</td><td>{conti.capital}</td></tr>)
+const Europa = paises.filter(contin => contin.continente === 'Europa').map((contin,i) => <tr key={i}><td>{contin.pais}</td><td>{contin.capital}</td></tr>)
 
 const Cabecera = () => (
   <header>
