@@ -16,13 +16,15 @@ const paises = [{'pais':'Argentina','capital':'Buenos Aires','continente':'Amér
 const America = paises.filter(cont => cont.continente === 'América').map((conti,i) => <tr key={i}><td>{conti.pais}</td><td>{conti.capital}</td></tr>)
 const Europa = paises.filter(contin => contin.continente === 'Europa').map((contin,i) => <tr key={i}><td>{contin.pais}</td><td>{contin.capital}</td></tr>)
 
+const Thead = (props) => (<th>{props.th}</th>)
+
 const Cabecera = () => (
   <header>
     <table id="t">
     <thead>
       <tr>
-      <th>Pais</th>
-      <th>Ciudad</th>
+      <Thead th="Pais"/>
+      <Thead th="Ciudad"/>
       </tr>
     </thead>
 <tbody>{America}</tbody>
@@ -35,8 +37,8 @@ const Cabecera2 = () => (
     <table id="t">
     <thead>
       <tr>
-      <th>Pais</th>
-      <th>Ciudad</th>
+      <Thead th="Pais"/>
+      <Thead th="Ciudad"/>
       </tr>
     </thead>
 <tbody>{Europa}</tbody>
